@@ -2,18 +2,17 @@
 function pasarVariables(pagina, nombres) {
   pagina +="?";
 
-/*function pasarVariables(pagina, nombres) {
-  pagina
-
-  /* +="?";
->>>>>>> 54664898ae19377b211897fe62f8a0e15f6b086b
-  
+ 
   pagina += nombres + "=" + escape(eval(nomVec[i]));
-  pagina = pagina.substring(0,pagina.length-1);*/
+  pagina = pagina.substring(0,pagina.length-1);
+  
   location.href=pagina;
 }
-/*
-cadVariables = location.search.substring(1,location.search.length);
+
+
+
+
+/* cadVariables = location.search.substring(1,location.search.length);
 arrVariables = cadVariables.split("&");
 for (i=0; i<arrVariables.length; i++) {
   arrVariableActual = arrVariables[i].split("=");
@@ -21,5 +20,5 @@ for (i=0; i<arrVariables.length; i++) {
     eval(arrVariableActual[0]+"='"+unescape(arrVariableActual[1])+"';");
   else
     eval(arrVariableActual[0]+"="+arrVariableActual[1]+";");
-}*/
+} */
 
