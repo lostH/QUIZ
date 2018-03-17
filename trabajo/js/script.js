@@ -1,8 +1,10 @@
 function pasarVariables(pagina, nombres) {
-  pagina +="?";
+  pagina
+
+  /* +="?";
   
   pagina += nombres + "=" + escape(eval(nomVec[i]));
-  pagina = pagina.substring(0,pagina.length-1);
+  pagina = pagina.substring(0,pagina.length-1);*/
   location.href=pagina;
 }
 /*
