@@ -1,4 +1,4 @@
-function pasarVariables(pagina, nombres) {
+/*function pasarVariables(pagina, nombres) {
   pagina +="?";
   
   pagina += nombres + "=" + escape(eval(nomVec[i]));
