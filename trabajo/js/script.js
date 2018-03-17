@@ -1,10 +1,33 @@
 
-function pasarVariables(pagina, nombres) {
-  pagina +="?";
+function pasarVariables(pagina, conteo) {
+ 
+ alert(conteo);
+// obtener valor de la pegunta 1
+  var valor = document.getElementById('correcto1').checked;  
+// obtener valor de la pegunta 2
+
+	valor = document.getElementById('correcto2').checked;
+  if (valor) {
+  		conteo++;
+  }
+  		conteo++;
+  }
+  // obtener valor de la pegunta 4
+  valor = document.getElementById('correcto4').checked;
+  if (valor) {
+  		conteo++;
+  }
+  // obtener valor de la pegunta 5
+  valor = document.getElementById('correcto5').checked;
+  if (valor) {
+  		conteo++;
+  }
+
+alert(conteo);
+  pagina +='?var1='+conteo;
 
 
-  pagina += nombres + "=" + escape(eval(nombres));
-  pagina = pagina.substring(0,pagina.length-1);
+
 
   location.href=pagina;
 }
@@ -12,13 +35,4 @@ function pasarVariables(pagina, nombres) {
 
 
 
-/* cadVariables = location.search.substring(1,location.search.length);
-arrVariables = cadVariables.split("&");
-for (i=0; i<arrVariables.length; i++) {
-  arrVariableActual = arrVariables[i].split("=");
-  if (isNaN(parseFloat(arrVariableActual[1])))
-    eval(arrVariableActual[0]+"='"+unescape(arrVariableActual[1])+"';");
-  else
-    eval(arrVariableActual[0]+"="+arrVariableActual[1]+";");
-} */
 
