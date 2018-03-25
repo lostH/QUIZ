@@ -54,6 +54,7 @@ function ganar (a){
   }
 alert(conteo);
 	if(conteo>=15){
+    alert("Salvaste la planta")
 		window.open("./win.html");
 	}
   else{
