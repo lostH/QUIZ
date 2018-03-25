@@ -36,13 +36,30 @@ alert(conteo);
 
 
   location.href=pagina;
-return conteo
+
 }
 
 function ganar (a){
-	if(a=>15){
-		S
+  alert(a)
+      var conteo=parseInt(a);
+     var valor = document.getElementById('correcto1').checked;  
+  if (valor) {
+      conteo++;
+  }
+// obtener valor de la pegunta 2
+
+  valor = document.getElementById('correcto2').checked;
+  if (valor) {
+      conteo++;
+  }
+alert(conteo);
+	if(conteo>=15){
+		window.open("./win.html");
 	}
+  else{
+    alert("No has ganado");
+  }
+
 }
 
 
