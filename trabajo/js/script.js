@@ -30,8 +30,14 @@ alert(conteo);
 
 
   location.href=pagina;
+return conteo
 }
 
+function ganar (a){
+	if(a=>15){
+		S
+	}
+}
 
 
 
