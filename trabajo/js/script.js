@@ -4,12 +4,18 @@ function pasarVariables(pagina, conteo) {
  alert(conteo);
 // obtener valor de la pegunta 1
   var valor = document.getElementById('correcto1').checked;  
+  if (valor) {
+  		conteo++;
+  }
 // obtener valor de la pegunta 2
 
 	valor = document.getElementById('correcto2').checked;
   if (valor) {
   		conteo++;
   }
+ // obtener valor de la pegunta 3
+  valor = document.getElementById('correcto3').checked;
+  if (valor) {
   		conteo++;
   }
   // obtener valor de la pegunta 4

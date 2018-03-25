@@ -4,6 +4,12 @@
 	<title>Preguntas Español</title>
 	<link rel="stylesheet" type="text/css" href="plants.css">
 	<meta charset="utf-8">
+	<script type="text/javascript">
+		var cadVariables = location.search.substring(1,location.search.length);
+		var arrVariables=cadVariables.split("=");
+		var conteo2 = parseInt(arrVariables[1]);
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<form>
@@ -13,7 +19,7 @@
 	<p>16- El embrión de una planta se llama</p>
 		<input type="Radio" name="p16">
 		<label for="plantas">A.	feto </label>
-		<input type="Radio" id="correcto" name="p16">
+		<input type="Radio" id="correcto1" name="p16">
 		<label for="plantas">B.	semilla</label>
 		<input type="Radio" name="p16">
 		<label for="plantas">C.	Espora</label>
@@ -25,7 +31,7 @@
 		<label for="plantas">A.	Germinación </label>
 		<input type="Radio" name="p17">
 		<label for="plantas">B.	Decantación</label>
-		<input type="Radio" id="correcto" name="p17">
+		<input type="Radio" id="correcto2" name="p17">
 		<label for="plantas">C.	Polinización</label>
 		<input type="Radio" name="p17">
 		<label for="plantas">D.	Ninguna de las anteriores</label>
@@ -35,7 +41,7 @@
 </form>
 
 <div>
-<a href="./Preguntas%20y%20respuestas%20planta%20espa%C3%B1ol(10-15).html"><img src="flecha i.png"></a>
+<a href="javascript:pasarVariables('pregunta_e3.html',conteo2);" ><img src="flecha i.png"></a>
 </div>
 
 </body>
